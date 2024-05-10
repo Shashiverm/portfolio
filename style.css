@@ -1,0 +1,369 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2; /* Updated background color */
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0f8b6c;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #222;
+}
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Section styles */
+section {
+    padding: 60px 40px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+section h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    animation: fadeInDown 1s ease-in-out;
+}
+section h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    /* background-color: #007bff; */
+}
+
+/* About section styles */
+#about img {
+    max-width: 250px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 1s ease-in-out;
+}
+
+/* Skills section styles */
+#skills ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+#skills li {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#skills li:hover {
+    transform: translateY(-5px);
+}
+#skills h3 {
+    margin-bottom: 15px;
+}
+
+/* Accomplishments section styles */
+#accomplishments ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+#accomplishments li {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+#accomplishments li:hover {
+    transform: translateY(-5px);
+}
+
+#accomplishments h3 {
+    margin-bottom: 15px;
+}
+
+/* Education section styles */
+#education ul {
+    list-style-type: none;
+}
+
+#education li {
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact section styles */
+#contact input,
+#contact textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+#contact button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* ... (previous CSS styles) */
+
+/* Subscribe Button */
+.subscribe-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.subscribe-input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.subscribe-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.subscribe-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+}
+
+.subscribe-btn:hover::before {
+    width: 200%;
+    height: 200%;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* ... (previous CSS styles) */
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+/* Social Icon Colors */
+.social-icon:nth-child(1):hover { /* Facebook */
+    color: #3b5998;
+}
+
+.social-icon:nth-child(2):hover { /* Twitter */
+    color: #1da1f2;
+}
+
+.social-icon:nth-child(3):hover { /* Instagram */
+    color: #e1306c;
+}
+
+.social-icon:nth-child(4):hover { /* LinkedIn */
+    color: #0077b5;
+}
+
+.social-icon:nth-child(5):hover { /* GitHub */
+    color: #ebe2e2;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #skills ul,
+    #accomplishments ul {
+        grid-template-columns: 1fr;
+    }
+}
