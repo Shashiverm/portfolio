@@ -1,4 +1,7 @@
-# portfolio
-i made this using html and css only
+# Portfolio
 
-Live portfolio here :- &nbsp; <a herf="https://shashiverm.github.io/portfolio/">shashi verma </a>
+I made this using HTML and CSS only.
+
+Live portfolio here: &nbsp; [Shashi Verma](https://shashiverm.github.io/portfolio/)
+
+This is a GitHub README.md file.
